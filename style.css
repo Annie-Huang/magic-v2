@@ -161,10 +161,12 @@ section {
 /*  color: var(--clr-neutral-100);*/
 /*}*/
 
-.hero img {
-  /*max-width: 495px;*/
-  /*height: 100%;*/
-}
+/* components */
+
+/*.hero img {*/
+/*  max-width: 495px;*/
+/*  height: 100%;*/
+/*}*/
 
 /*.mastering h2 {*/
 /*  color: var(--clr-accent-400);*/
@@ -173,7 +175,12 @@ section {
   height: 150px;
 }
 
-.cta .container {
-  max-width: 33.75rem; /*540px;*/
+.cta {
+  background-image: url('assets/cta-bg.jpg');
+  background-size: cover;
   text-align: center;
 }
+/*.cta .container {*/
+/*  max-width: 33.75rem; !*540px; The reason I set this is from the design, there is two lines in the <p> so I thought it's smaller.... *!*/
+/*  text-align: center;*/
+/*}*/
