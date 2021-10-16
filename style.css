@@ -33,11 +33,16 @@ p {
   margin: 0;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 /* Utility classes */
 .flow-content > * + * {
   margin-top: 1.25rem;
 }
-.flow-content-large > * + * {
+.flow-content__large > * + * {
   margin-top: 2.5rem;
 }
 
@@ -92,14 +97,23 @@ section:nth-of-type(2n) {
 .flex {
   display: flex;
 }
-
-.hero .flex {
-  gap: 60px;
-  flex: 1;
+.flex-gap {
+  gap: 30px;
 }
+.flex-gap__large {
+  gap: 60px;
+}
+
 .hero img {
   max-width: 495px;
   height: 100%;
+}
+
+.mastering h2 {
+  color: var(--clr-accent-400);
+}
+.mastering img {
+  height: 150px;
 }
 
 .cta .container {
