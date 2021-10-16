@@ -63,6 +63,23 @@ img {
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column; /* Added by Kevin. So mobile layout can use it */
+}
+@media (min-width: 40em) {
+  .flex {
+    flex-direction: row; /* Added by Kevin */
+  }
+}
+
+/*.flex-gap {*/
+/*  gap: 30px;*/
+/*}*/
+/*.flex-gap__large {*/
+/*  gap: 60px;*/
+/*}*/
+
 /* I personally will not create so many class name. I raterht keep my html super clean */
 /*section:nth-of-type(2n) {*/
 .bg-dark {
@@ -133,19 +150,9 @@ section {
 /*  color: var(--clr-neutral-100);*/
 /*}*/
 
-/*.flex {*/
-/*  display: flex;*/
-/*}*/
-/*.flex-gap {*/
-/*  gap: 30px;*/
-/*}*/
-/*.flex-gap__large {*/
-/*  gap: 60px;*/
-/*}*/
-
 .hero img {
-  max-width: 495px;
-  height: 100%;
+  /*max-width: 495px;*/
+  /*height: 100%;*/
 }
 
 /*.mastering h2 {*/
