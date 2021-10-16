@@ -66,10 +66,12 @@ img {
 .flex {
   display: flex;
   flex-direction: column; /* Added by Kevin. So mobile layout can use it */
+  gap: calc(var(--spacer) * 3); /* Added by Kevin. This is the vertical gap */
 }
 @media (min-width: 40em) {
   .flex {
     flex-direction: row; /* Added by Kevin */
+    gap: var(--spacer); /* Added by Kevin. This is the horizontal gap */
   }
 }
 
