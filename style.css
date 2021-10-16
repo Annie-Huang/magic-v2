@@ -41,6 +41,12 @@ ol[class] {
   margin: 0; /* Added by Kevin */
 }
 
+img {
+  display: block;
+  max-width: 100%; /* Added by Kevin */
+  height: auto; /* Added by Kevin */
+}
+
 /* Utility classes */
 .flow-content > * + * {
   margin-top: 1.25rem;
@@ -78,12 +84,6 @@ h1 span {
   padding: 0.75em 1.5em;
   background-color: var(--clr-accent-400);
   color: var(--clr-neutral-900);
-}
-
-img {
-  display: block;
-  max-width: 100%; /* Added by Kevin */
-  height: auto; /* Added by Kevin */
 }
 
 .card {
