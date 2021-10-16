@@ -37,6 +37,9 @@ p {
 .flow-content > * + * {
   margin-top: 1.25rem;
 }
+.flow-content-large > * + * {
+  margin-top: 2.5rem;
+}
 
 /* general styling */
 
@@ -69,6 +72,10 @@ h1 span {
   color: var(--clr-neutral-900);
 }
 
+img {
+  display: block;
+}
+
 section {
   padding: 8.125rem 9.063rem; /* 130px 145px*/
 }
@@ -78,8 +85,25 @@ section:nth-of-type(2n) {
 }
 
 .container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .flex {
   display: flex;
+}
+
+.hero .flex {
+  gap: 60px;
+  flex: 1;
+}
+.hero img {
+  max-width: 495px;
+  height: 100%;
+}
+
+.cta .container {
+  margin: 0 auto;
+  max-width: 33.75rem; /*540px;*/
+  text-align: center;
 }
