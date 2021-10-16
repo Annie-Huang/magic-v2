@@ -70,6 +70,10 @@ img {
   color: var(--clr-neutral-100);
 }
 
+.text-accent {
+  color: var(--clr-accent-400);
+}
+
 /* general styling */
 
 body {
@@ -144,9 +148,9 @@ section {
   height: 100%;
 }
 
-.mastering h2 {
-  color: var(--clr-accent-400);
-}
+/*.mastering h2 {*/
+/*  color: var(--clr-accent-400);*/
+/*}*/
 .mastering img {
   height: 150px;
 }
