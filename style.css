@@ -83,6 +83,10 @@ img {
 /*  gap: 60px;*/
 /*}*/
 
+.shadow {
+  box-shadow: var(--box-shadow);
+}
+
 /* I personally will not create so many class name. I raterht keep my html super clean */
 /*section:nth-of-type(2n) {*/
 .bg-dark {
