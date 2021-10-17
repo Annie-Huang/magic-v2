@@ -38,7 +38,7 @@ ul[class],  /* <--- Kevin's approach */
 ol[class] {
   list-style-type: none;
   padding: 0;
-  margin: 0; /* Added by Kevin */
+  /*margin: 0; !* Added by Kevin *!*/
 }
 
 img {
@@ -129,23 +129,6 @@ h1 span {
   color: var(--clr-neutral-900);
 }
 
-.card {
-  padding-top: 8px;
-  padding-left: 8px;
-
-  position: relative;
-}
-.card::before {
-  position: absolute;
-  content: '';
-  width: 66px;
-  aspect-ratio: 1;
-  left: 0;
-  top: 0;
-  background-color: var(--clr-accent-400);
-  z-index: -1;
-}
-
 /* general styling */
 
 section {
@@ -165,7 +148,7 @@ section {
 /*  color: var(--clr-neutral-100);*/
 /*}*/
 
-/* components */
+/* individual sections */
 
 /*.hero img {*/
 /*  max-width: 495px;*/
@@ -178,6 +161,33 @@ section {
 .mastering img {
   height: 150px;
 }
+
+.join-now li::before {
+  content: '';
+  width: 66px;
+  aspect-ratio: 1;
+  background-color: var(--clr-accent-400);
+  position: absolute;
+  transform: translate(-0.5rem, -0.5rem);
+  z-index: -1;
+}
+
+/*.card {*/
+/*  padding-top: 8px;*/
+/*  padding-left: 8px;*/
+
+/*  position: relative;*/
+/*}*/
+/*.card::before {*/
+/*  position: absolute;*/
+/*  content: '';*/
+/*  width: 66px;*/
+/*  aspect-ratio: 1;*/
+/*  left: 0;*/
+/*  top: 0;*/
+/*  background-color: var(--clr-accent-400);*/
+/*  z-index: -1;*/
+/*}*/
 
 .cta {
   background-image: url('assets/cta-bg.jpg');
