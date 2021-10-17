@@ -49,11 +49,12 @@ img {
 
 /* Utility classes */
 .flow-content > * + * {
-  margin-top: 1.25rem;
+  /*margin-top: 1.25rem;*/
+  margin-top: var(--flow-space, var(--spacer));
 }
-.flow-content__large > * + * {
-  margin-top: 2.5rem;
-}
+/*.flow-content__large > * + * {*/
+/*  margin-top: 2.5rem;*/
+/*}*/
 
 .container {
   /* I don't understand why we need horizontal spacing for .container. it may as well just add into max-width */
@@ -150,6 +151,9 @@ section {
 
 /* individual sections */
 
+.hero {
+  --flow-space: 3rem;
+}
 /*.hero img {*/
 /*  max-width: 495px;*/
 /*  height: 100%;*/
@@ -190,6 +194,7 @@ section {
 /*}*/
 
 .cta {
+  --flow-space: 3rem;
   background-image: url('assets/cta-bg.jpg');
   background-size: cover;
   text-align: center;
